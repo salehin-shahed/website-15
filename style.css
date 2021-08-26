@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Default CSS */
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Header Section */
+
+.header {
+    background: #000000;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.menu {
+    width: 70%;
+    text-align: right;
+}
+
+.menu span {
+    color: #fff;
+    margin-left: -25px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 28%;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Banner Section */
+
+.banner {
+    background: url(images/banner.jpg) no-repeat top;
+    background-size: cover;
+    padding: 300px 0;
+}
+
+.banner-text {
+    margin-top: -35px;
+}
+
+.banner-text h2 {
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px 0 25px 0;
+}
+
+.banner-button .btn-1 {
+    display: inline-block;
+    background: #000;
+    padding: 20px 45px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-right: 15px;
+    border: 1px solid#fff;
+}
+
+.banner-button .btn-1:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: .4s;
+}
+
+.banner-button .btn-2 {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 45px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.banner-button .btn-2:hover {
+    background: #000;
+    color: #fff;
+    transition: .4s;
+}
+
+
+/* Drop Down Menu */
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000;
+    width: 210px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li ul li {
+    display: block;
+    padding: 0;
+    text-align: left;
+    margin-left: 0;
+}
+
+.menu ul li ul li a {
+    display: block;
+    padding-left: 20px;
+}
+
+.menu ul li ul li:hover a {
+    background: #fff;
+    color: #000;
+    text-decoration: 2px underline #000;
+}
+
+.menu ul li ul li a::after {
+    height: 0;
+}
+
+.menu ul li ul li:first-child {
+    border-top: 2px solid #fff;
+}
+
+
+/* About Section */
+
+.about {
+    background: #87a471;
+    text-align: center;
+}
+
+.sa-title {
+    color: #e8dfda;
+    font-size: 50px;
+    padding: 50px 0 0 0;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e8dfda;
+    width: 20%;
+    margin: auto;
+    letter-spacing: 3px;
+    text-shadow: 0 0 4px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text p {
+    color: #e2e2e2;
+    text-align: left;
+    margin-top: 50px;
+    padding: 50px 20px;
+    line-height: 1.6em;
+}
+
+.about-img {
+    width: 50%;
+    margin: 60px 0;
+}
+
+.about-img img {
+    width: 300px;
+}
+
+
+/* Service Section */
+
+.service {
+    background: #606a64;
+    text-align: center;
+}
+
+.service-title h1 {
+    text-transform: capitalize;
+    width: 20%;
+}
+
+.service-title h3 {
+    font-size: 40px;
+    color: #dddedf;
+    padding: 20px 0;
+}
+
+.service-title p {
+    color: #d0d0d0;
+    font-size: 17px;
+    padding: 0 335px;
+    line-height: 1.5em;
+    margin-bottom: 100px;
+}
+
+.service-item {
+    padding-bottom: 60px;
+}
+
+.items {
+    width: 25%;
+    margin-right: 3%;
+    margin-left: 5%;
+    background: #ffffff;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.service-logo img {
+    float: left;
+    margin-bottom: 100px;
+}
+
+.service-text {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.service-text h2 {
+    padding-bottom: 20px;
+    color: #4c6782;
+    font-size: 28px;
+}
+
+.service-text p {
+    line-height: 1.5em;
+    color: #93a2b2;
+}
+
+/* Work Section */
+
+.work {
+    background: #87a471;
+}
+
+.work-title {
+    text-align: center;
+    padding: 100px 0 70px 0;
+}
+
+.work-title h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.work-title p {
+    color: #ddd;
+}
+
+.work-card {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    width: 33%;
+    margin-left: 30px;
+}
+
+.card-1 {
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+
+.card img {
+    width: 500px;
+}
+
+.card p {
+    color: #506a85;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.card span {
+    color: #fff;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.work-image {
+    padding-bottom: 100px;
+}
+
+.work-image .image {
+    margin-right: 40px;
+    width: 210px;
+}
+
+.work-image .img-1 {
+    margin-left: 20%;
+}
+
+
+/* Team Section */
+
+.team-section {
+    background: #5b9776;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-title h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.team-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 41%;
+    width: 18%;
+    height: 3px;
+    background: #ddd;
+}
+
+.team-member {
+    margin-left: 20%;
+}
+
+.team-img {
+    margin-right: 2%;
+}
+
+.team-img img {
+    width: 250px;
+}
+
+.social-icon a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    transition: .3s;
+}
+
+.social-icon a:hover {
+    color: #4d6a87;
+}
+
+
+/* Get Section */
+
+.get {
+    background: #606a64;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.get h2 {
+    color: #e4e6e8;
+    font-size: 30px;
+}
+
+.get p {
+    color: #e0dfdf;
+    padding: 15px 390px;
+    line-height: 1.4em;
+}
+
+.get a {
+    background: #00bc9c;
+    color: #fff;
+    padding: 12px 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.get a:hover {
+    background: #4d6a88;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
